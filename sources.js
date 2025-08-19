@@ -1,28 +1,21 @@
 var externalData = {
     sources: [
 //      {
-//          "name": '',
-//          "type": '',
-//          "url": ''
+//          "name": "my-geojson", 
+//          "type": "geojson",
+//          "url": "map/CCRO.geojson"
 //        },
     ],
     layers: [
 //      {
-//          "id": "",
-//          "type": "",
-//          "source": "",
+//          "id": "my-geojson-layer",
+//          "type": "fill",
+//          "source": "my-geojson",
 //          "source-layer": "",
-//          "layout": {
-//              "text-field": ["to-string", ["get", "Name"]],
-//              "text-font": ["Open Sans SemiBold", "Arial Unicode MS Regular"],
-//              "text-size": 10,
-//              "text-padding": 0
-//          },
+//          "layout": {},
 //          "paint": {
-//              "text-color": "#ffffff",
-//              "text-halo-color": "hsl(0, 99%, 1%)",
-//              "text-halo-width": 1,
-//              "text-opacity": 0
+//              "fill-color": "#B42222",
+//              "fill-opacity": 0.5
 //          }
 //      }
     ]
