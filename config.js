@@ -6,7 +6,7 @@ var config = {
     legend: false, // if legend is set to true, inset will be disabled.
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps. You will need to provide your own terrain tiles.
-    useCustomLayers: false, //set true for enabling custom layers from sources.js
+    useCustomLayers: true, //set true for enabling custom layers from sources.js
     bookmarks: true,
     chapterReturn: true,
     title: 'Ujamaa Community Resource Team (UCRT)',
@@ -24,9 +24,9 @@ var config = {
             image: './images/UCRT_WEB.png',
             caption: '',
             website: '',
-            author: '',
+            author: 'UCRT',
             legend: '<span style="font-size: 0.85em;"><em>Legend content</em></span>',
-            description: 'Strengthened tenure arrangements beyond CVLs through communal Certificates of Customary Right of Occupancy (CCROs) that institutionalise collective tenure arrangements for pastoralists and hunter-gatherers. Established Women’s Rights and Leadership Forums (WRLFs) to promote women’s rights to own, and make decisions over, land and property.  ',
+            description: 'Strengthening tenure arrangements beyond CVLs through communal Certificates of Customary Right of Occupancy (CCROs) that institutionalise collective tenure arrangements for pastoralists and hunter-gatherers. Established Women’s Rights and Leadership Forums (WRLFs) to promote women’s rights to own, and make decisions over, land and property.  ',
             location: {
                 center: [36.7672, -5.2448],
                 zoom: 9.41,

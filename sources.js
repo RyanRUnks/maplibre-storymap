@@ -1,18 +1,16 @@
-var externalData = {
+var customSourcesAndLayers = {
     sources: [
 //      {
-//          "name": "my-geojson", 
+//          "id": "my-geojson-source", 
 //          "type": "geojson",
 //          "url": "map/CCRO.geojson"
 //        },
     ],
     layers: [
 //      {
-//          "id": "my-geojson-layer",
+//          "id": "my-geojson-fill",
 //          "type": "fill",
-//          "source": "my-geojson",
-//          "source-layer": "",
-//          "layout": {},
+//          "source": "my-geojson-source",
 //          "paint": {
 //              "fill-color": "#B42222",
 //              "fill-opacity": 0.5
