@@ -1,14 +1,19 @@
 var externalData = {
     sources: [
         {
-            "name": "my-geojson-source", // Use "name", not "id"
+            "name": "my-geojson-source", 
             "type": "geojson",
             "data": "./map/CCRO.geojson"
         },
         {
-            "name": "my-geojson-source2", // Use "name", not "id"
+            "name": "my-geojson-source2", 
             "type": "geojson",
             "data": "./map/UCRT_districts.geojson"
+        },
+        {
+            "name": "my-geojson-source3", 
+            "type": "geojson",
+            "data": "./map/IndigenousTZ.geojson"
         }
     ],
     layers: [
@@ -26,6 +31,15 @@ var externalData = {
             "id": "my-geojson-fill2",
             "type": "fill",
             "source": "my-geojson-source2",
+            "paint": {
+                "fill-color": "#B42222",
+                "fill-opacity": 0.5
+            }
+        },
+        {
+            "id": "my-geojson-fill3",
+            "type": "fill",
+            "source": "my-geojson-source3",
             "paint": {
                 "fill-color": "#B42222",
                 "fill-opacity": 0.5

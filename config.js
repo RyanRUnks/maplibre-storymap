@@ -27,8 +27,8 @@ var config = {
             legend: '<span style="font-size: 0.85em;"><em>Legend content</em></span>',
             description: '  ',
             location: {
-                center: [35, -4.05],
-                zoom: 7.25,
+                center: [33, -6],
+                zoom: 5.5,
                 pitch: 0,
                 bearing: 0
             },
@@ -38,12 +38,22 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                {layer: 'my-geojson-fill',opacity: 1},
-                {layer: 'my-geojson-fill2',opacity: 1}
+                {layer: 'my-geojson-fill',opacity: 0},
+                {layer: 'my-geojson-fill3',opacity: 1},
+                                 {
+                      layer: 'my-geojson-label2',
+                      opacity: 0
+                 },
+                {layer: 'my-geojson-fill2',opacity: 0}
             ],
             onChapterExit: [
-                 {layer: 'my-geojson-fill',opacity: 1},
-                 {layer: 'my-geojson-fill2',opacity: 1}
+                 {layer: 'my-geojson-fill',opacity: 0},
+                                  {
+                      layer: 'my-geojson-label2',
+                      opacity: 0
+                 },
+                 {layer: 'my-geojson-fill3',opacity: 0},
+                 {layer: 'my-geojson-fill2',opacity: 0}
             ]
         },
 
@@ -74,6 +84,7 @@ var config = {
                       layer: 'my-geojson-fill',
                       opacity: 0
                  },
+                 {layer: 'my-geojson-fill3',opacity: 0},
                  {
                       layer: 'my-geojson-label2',
                       opacity: 1
@@ -88,6 +99,7 @@ var config = {
                       layer: 'my-geojson-fill',
                       opacity: 0
                  },
+                 {layer: 'my-geojson-fill3',opacity: 0},
                                   {
                       layer: 'my-geojson-label2',
                       opacity: 0
@@ -120,6 +132,7 @@ var config = {
                       layer: 'my-geojson-fill',
                       opacity: 0
                  },
+                 {layer: 'my-geojson-fill3',opacity: 0},
                  {
                       layer: 'my-geojson-fill2',
                       opacity: 0
@@ -130,6 +143,7 @@ var config = {
                       layer: 'my-geojson-fill',
                       opacity: 0
                  },
+                 {layer: 'my-geojson-fill3',opacity: 0},
                  {
                       layer: 'my-geojson-fill2',
                       opacity: 0
@@ -163,6 +177,7 @@ var config = {
                       layer: 'my-geojson-fill',
                       opacity: 1
                  },
+                 {layer: 'my-geojson-fill3',opacity: 0},
                  {
                       layer: 'my-geojson-label2',
                       opacity: 0
@@ -177,6 +192,7 @@ var config = {
                       layer: 'my-geojson-fill',
                       opacity: 1
                  },
+                 {layer: 'my-geojson-fill3',opacity: 0},
                 {
                       layer: 'my-geojson-label2',
                       opacity: 0
