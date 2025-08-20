@@ -16,16 +16,16 @@ var config = {
     footer: 'Source: source citations, etc.<br> Created using <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> template.',
     chapters: [
                 {
-            id: 'chapter-id2',
+            id: 'chapter-1',
             alignment: 'left',
             hidden: false,
-            title: 'Districts UCRT works in',
+            title: 'Indigenous land in Tanzania',
             image: './images/landscape.png',
             caption: '',
             website: '',
-            author: 'UCRT',
+            author: '',
             legend: '<span style="font-size: 0.85em;"><em>Legend content</em></span>',
-            description: 'Strengthening tenure arrangements beyond CVLs through communal Certificates of Customary Right of Occupancy (CCROs) that institutionalise collective tenure arrangements for pastoralists and hunter-gatherers. Established Women’s Rights and Leadership Forums (WRLFs) to promote women’s rights to own, and make decisions over, land and property.  ',
+            description: '  ',
             location: {
                 center: [35, -4.05],
                 zoom: 7.25,
@@ -48,19 +48,19 @@ var config = {
         },
 
         {
-            id: 'chapter-id',
+            id: 'chapter-2',
             alignment: 'left',
             hidden: false,
             title: 'Districts UCRT works in',
             image: './images/pastoralism.png',
             caption: '',
             website: '',
-            author: 'UCRT',
+            author: '',
             legend: '<span style="font-size: 0.85em;"><em>Legend content</em></span>',
             description: 'Strengthening tenure arrangements beyond CVLs through communal Certificates of Customary Right of Occupancy (CCROs) that institutionalise collective tenure arrangements for pastoralists and hunter-gatherers. Established Women’s Rights and Leadership Forums (WRLFs) to promote women’s rights to own, and make decisions over, land and property.  ',
             location: {
-                center: [35, -4.05],
-                zoom: 7.25,
+                center: [35.5, -4.05],
+                zoom: 7.75,
                 pitch: 0,
                 bearing: 0
             },
@@ -75,6 +75,10 @@ var config = {
                       opacity: 0
                  },
                  {
+                      layer: 'my-geojson-label2',
+                      opacity: 1
+                 },
+                 {
                       layer: 'my-geojson-fill2',
                       opacity: 0.5
                  }
@@ -84,6 +88,10 @@ var config = {
                       layer: 'my-geojson-fill',
                       opacity: 0
                  },
+                                  {
+                      layer: 'my-geojson-label2',
+                      opacity: 0
+                 },
                  {
                       layer: 'my-geojson-fill2',
                       opacity: 0
@@ -91,15 +99,15 @@ var config = {
             ]
         },
                         {
-            id: 'other-identifier',
+            id: 'chapter-3',
             alignment: 'right',
             hidden: false,
-            title: 'Second Title',
+            title: 'Arusha area',
             image: './images/hadzabe.png',
             description: 'Copy these sections to add to your story.',
             location: {
-                center: [35, -4.05],
-                zoom: 5,
+                center: [36.6830, -3.3869],
+                zoom: 8,
                 pitch: 0,
                 bearing: 0
             },
@@ -129,7 +137,7 @@ var config = {
             ]
         },
         {
-            id: 'my-first-chapter',
+            id: 'chapter-4',
             alignment: 'left',
             hidden: false,
             title: 'Certificates of Customary Right of Occupancy (CCROs)',
@@ -156,6 +164,10 @@ var config = {
                       opacity: 1
                  },
                  {
+                      layer: 'my-geojson-label2',
+                      opacity: 0
+                 },
+                 {
                       layer: 'my-geojson-fill2',
                       opacity: 0
                  }
@@ -163,6 +175,10 @@ var config = {
             onChapterExit: [
                  {
                       layer: 'my-geojson-fill',
+                      opacity: 1
+                 },
+                {
+                      layer: 'my-geojson-label2',
                       opacity: 0
                  },
                  {

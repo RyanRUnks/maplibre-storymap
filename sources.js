@@ -21,6 +21,7 @@ var externalData = {
                 "fill-opacity": 0.5
             }
         },
+        
         {
             "id": "my-geojson-fill2",
             "type": "fill",
@@ -29,6 +30,24 @@ var externalData = {
                 "fill-color": "#B42222",
                 "fill-opacity": 0.5
             }
+        },
+
+        {
+            id: "my-geojson-label2",
+            type: "symbol",
+            source: "my-geojson-source2",
+            layout: {
+                "text-field": ["get", "NewDist20"],        // property to use as label
+                "text-size": 14,
+                "text-anchor": "center"
+            },
+            paint: {
+                "text-color": "#222",
+                "text-halo-color": "#fff",
+                "text-halo-width": 1
+            }
         }
+
+        
     ]
 };
