@@ -103,6 +103,34 @@ var externalData = {
             "name": "WildlifeMGMT", 
             "type": "geojson",
             "data": "./map/WildlifeMGMT_FeaturesToJSON.geojson"
+        },
+
+
+
+                {
+            "name": "ForestReserveM", 
+            "type": "geojson",
+            "data": "./map/ForestReserveM_FeaturesToJSO.geojson"
+        },
+                {
+            "name": "Game_Reserve", 
+            "type": "geojson",
+            "data": "./map/Game_Reserve_FeaturesToJSON.geojson"
+        },
+                {
+            "name": "GCA_main", 
+            "type": "geojson",
+            "data": "./map/GCA_main_FeaturesToJSON.geojson"
+        },
+                {
+            "name": "National_parks", 
+            "type": "geojson",
+            "data": "./map/National_parks_FeaturesToJSO.geojson"
+        },
+                {
+            "name": "WMA", 
+            "type": "geojson",
+            "data": "./map/WMA_FeaturesToJSON.geojson"
         }
 
     ],
@@ -126,15 +154,7 @@ var externalData = {
                 "fill-opacity": 0.5
             }
         },
-        {
-            "id": "my-geojson-fill3",
-            "type": "fill",
-            "source": "my-geojson-source3",
-            "paint": {
-                "fill-color": "#B42222",
-                "fill-opacity": 0.5
-            }
-        },
+
 
         {
             id: "my-geojson-label2",
@@ -340,9 +360,64 @@ var externalData = {
 
 
 
+
+
+        {
+            "id": "ForestReserveM-fill",
+            "type": "fill",
+            "source": "ForestReserveM",
+            "paint": {
+                "fill-color": "#984ea3",
+                "fill-opacity": 0.5
+            }
+        },
+
+                {
+            "id": "Game_Reserve-fill",
+            "type": "fill",
+            "source": "Game_Reserve",
+            "paint": {
+                "fill-color": "#F5FCBD",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "GCA_main-fill",
+            "type": "fill",
+            "source": "GCA_main",
+            "paint": {
+                "fill-color": "#9C4061",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "National_parks-fill",
+            "type": "fill",
+            "source": "National_parks",
+            "paint": {
+                "fill-color": "#F56959",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "WMA-fill",
+            "type": "fill",
+            "source": "WMA",
+            "paint": {
+                "fill-color": "#FCCCC5",
+                "fill-opacity": 0.5
+            }
+        },
+
+
+
         
 
 
         
     ]
 };
+
