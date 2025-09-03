@@ -2,8 +2,8 @@ var config = {
     style: 'https://api.maptiler.com/maps/basic-v2/style.json?key=ISAejSbv9TwJZOOcbCbJ',
     showMarkers: true,
     markerColor: '#3FB1CE',
-    inset: true, // if inset map is set to true, legend will be disabled.
-    legend: false, // if legend is set to true, inset will be disabled.
+    inset: false, // if inset map is set to true, legend will be disabled.
+    legend: true, // if legend is set to true, inset will be disabled.
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps. You will need to provide your own terrain tiles.
     useCustomLayers: true, //set true for enabling custom layers from sources.js
@@ -39,11 +39,14 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {layer: 'my-geojson-fill',opacity: 0},
-                {layer: 'my-geojson-fill3',opacity: 1},
-                                 {
-                      layer: 'my-geojson-label2',
-                      opacity: 0
-                 },
+                {layer: 'Datooga-fill',opacity: 1},
+                {layer: 'Datooga_Hadzabe-fill',opacity: 1},
+                {layer: 'Datooga_Maasai-fill',opacity: 1},
+                {layer: 'Hadzabe-fill',opacity: 1},
+                {layer: 'Maasai_Akie-fill',opacity: 1},
+                {layer: 'Maasai-fill',opacity: 1},
+                {layer: 'Sandawe_Maasai-fill',opacity: 1},
+                {layer: 'my-geojson-label2',opacity: 0},
                 {layer: 'my-geojson-fill2',opacity: 0}
             ],
             onChapterExit: [
@@ -52,6 +55,15 @@ var config = {
                       layer: 'my-geojson-label2',
                       opacity: 0
                  },
+
+                 {layer: 'Datooga-fill',opacity: 0},
+                 {layer: 'Datooga_Hadzabe-fill',opacity: 0},
+                {layer: 'Datooga_Maasai-fill',opacity: 0},
+                {layer: 'Hadzabe-fill',opacity: 0},
+                {layer: 'Maasai_Akie-fill',opacity: 0},
+                {layer: 'Maasai-fill',opacity: 0},
+                {layer: 'Sandawe_Maasai-fill',opacity: 0},
+
                  {layer: 'my-geojson-fill3',opacity: 0},
                  {layer: 'my-geojson-fill2',opacity: 0}
             ]
