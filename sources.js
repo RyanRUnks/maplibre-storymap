@@ -44,7 +44,67 @@ var externalData = {
             "name": "Sandawe_Maasai", 
             "type": "geojson",
             "data": "./map/Sandawe_Maasai_FeaturesToJSO.geojson"
+        },
+
+
+
+
+        {
+            "name": "Calves_Weak", 
+            "type": "geojson",
+            "data": "./map/Calves_Weak_FeaturesToJSON.geojson"
+        },
+                {
+            "name": "Dry_season_grz", 
+            "type": "geojson",
+            "data": "./map/Dry_season_grz_FeaturesToJSO.geojson"
+        },
+                {
+            "name": "ForestZones", 
+            "type": "geojson",
+            "data": "./map/ForestZones_FeaturesToJSON.geojson"
+        },
+                {
+            "name": "GrazingZones", 
+            "type": "geojson",
+            "data": "./map/GrazingZones_FeaturesToJSON.geojson"
+        },
+                {
+            "name": "InvestmentZone", 
+            "type": "geojson",
+            "data": "./map/InvestmentZone_FeaturesToJSO.geojson"
+        },
+                {
+            "name": "Settlement_Agr", 
+            "type": "geojson",
+            "data": "./map/Settlement_Agr_FeaturesToJSO.geojson"
+        },
+                {
+            "name": "Settlement_Gra", 
+            "type": "geojson",
+            "data": "./map/Settlement_Gra_FeaturesToJSO.geojson"
+        },
+                {
+            "name": "Social_Service", 
+            "type": "geojson",
+            "data": "./map/Social_Service_FeaturesToJSO.geojson"
+        },
+                {
+            "name": "Water_sources", 
+            "type": "geojson",
+            "data": "./map/Water_sources_FeaturesToJSON.geojson"
+        },
+                {
+            "name": "WetSeasonGrazi", 
+            "type": "geojson",
+            "data": "./map/WetSeasonGrazi_FeaturesToJSO.geojson"
+        },
+                {
+            "name": "WildlifeMGMT", 
+            "type": "geojson",
+            "data": "./map/WildlifeMGMT_FeaturesToJSON.geojson"
         }
+
     ],
     layers: [
         {
@@ -161,6 +221,126 @@ var externalData = {
                 "fill-opacity": 0.5
             }
         },
+
+
+
+
+
+
+        {
+            "id": "Calves_Weak-fill",
+            "type": "fill",
+            "source": "Calves_Weak",
+            "paint": {
+                "fill-color": "#e41a1c",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "Dry_season_grz-fill",
+            "type": "fill",
+            "source": "Dry_season_grz",
+            "paint": {
+                "fill-color": "#485A82",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "ForestZones-fill",
+            "type": "fill",
+            "source": "ForestZones",
+            "paint": {
+                "fill-color": "#927F5F",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "GrazingZones-fill",
+            "type": "fill",
+            "source": "GrazingZones",
+            "paint": {
+                "fill-color": "#377eb8",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "InvestmentZone-fill",
+            "type": "fill",
+            "source": "InvestmentZone",
+            "paint": {
+                "fill-color": "#ff7f00",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "Settlement_Agr-fill",
+            "type": "fill",
+            "source": "Settlement_Agr",
+            "paint": {
+                "fill-color": "#4daf4a",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "Settlement_Gra-fill",
+            "type": "fill",
+            "source": "Settlement_Gra",
+            "paint": {
+                "fill-color": "#984ea3",
+                "fill-opacity": 0.5
+            }
+        },
+
+                {
+            "id": "Social_Service-fill",
+            "type": "fill",
+            "source": "Social_Service",
+            "paint": {
+                "fill-color": "#F5FCBD",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "Water_sources-fill",
+            "type": "fill",
+            "source": "Water_sources",
+            "paint": {
+                "fill-color": "#9C4061",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "WetSeasonGrazi-fill",
+            "type": "fill",
+            "source": "WetSeasonGrazi",
+            "paint": {
+                "fill-color": "#F56959",
+                "fill-opacity": 0.5
+            }
+        },
+
+        {
+            "id": "WildlifeMGMT-fill",
+            "type": "fill",
+            "source": "WildlifeMGMT",
+            "paint": {
+                "fill-color": "#FCCCC5",
+                "fill-opacity": 0.5
+            }
+        },
+
+
+
+
+        
 
 
         

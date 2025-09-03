@@ -47,7 +47,18 @@ var config = {
                 {layer: 'Maasai-fill',opacity: 0.5},
                 {layer: 'Sandawe_Maasai-fill',opacity: 1},
                 {layer: 'my-geojson-label2',opacity: 0},
-                {layer: 'my-geojson-fill2',opacity: 0}
+                {layer: 'my-geojson-fill2',opacity: 0},
+                {layer: 'Calves_Weak-fill',opacity: 0},
+                {layer: 'Dry_season_grz-fill',opacity: 0},
+                {layer: 'ForestZones-fill',opacity: 0},
+                {layer: 'GrazingZones-fill',opacity: 0},
+                {layer: 'InvestmentZone-fill',opacity: 0},
+                {layer: 'Settlement_Agr-fill',opacity: 0},
+                {layer: 'Settlement_Gra-fill',opacity: 0},
+                {layer: 'Social_Service-fill',opacity: 0},
+                {layer: 'Water_sources-fill',opacity: 0},
+                {layer: 'WetSeasonGrazi-fill',opacity: 0},
+                {layer: 'WildlifeMGMT-fill',opacity: 0}
             ],
             onChapterExit: [
                  {layer: 'my-geojson-fill',opacity: 0},
@@ -66,7 +77,40 @@ var config = {
 
                  {layer: 'my-geojson-fill3',opacity: 0},
                  {layer: 'my-geojson-fill2',opacity: 0}
-            ]
+            ],
+            legend: `
+                <h3 style="margin-top:0;">Legend</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #e41a1c; margin-right: 8px; border-radius:3px;"></span>
+                    Datooga
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #485A82; margin-right: 8px; border-radius:3px;"></span>
+                    Datooga & Hadzabe
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #927F5F; margin-right: 8px; border-radius:3px;"></span>
+                    Datooga & Maasai
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #377eb8; margin-right: 8px; border-radius:3px;"></span>
+                    Hadzabe
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #ff7f00; margin-right: 8px; border-radius:3px;"></span>
+                    Maasai & Akie
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #4daf4a; margin-right: 8px; border-radius:3px;"></span>
+                    Maasai
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #984ea3; margin-right: 8px; border-radius:3px;"></span>
+                    Sandawe & Maasai
+                  </li>
+                </ul>
+            `
         },
 
         {
@@ -202,7 +246,7 @@ var config = {
             onChapterExit: [
                  {
                       layer: 'my-geojson-fill',
-                      opacity: 1
+                      opacity: 0
                  },
                  {layer: 'my-geojson-fill3',opacity: 0},
                 {
@@ -215,6 +259,107 @@ var config = {
                  }
             ]
         },
+
+                        {
+            id: 'chapter-5',
+            alignment: 'left',
+            hidden: false,
+            title: 'Land Use Planning',
+            image: './images/landscape.png',
+            caption: '',
+            website: '',
+            author: '',
+            legend: '<span style="font-size: 0.85em;"><em>Legend content</em></span>',
+            description: '  ',
+            location: {
+                center: [36.12, -3.8],
+                zoom: 7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {layer: 'Calves_Weak-fill',opacity: 1},
+                {layer: 'Dry_season_grz-fill',opacity: 1},
+                {layer: 'ForestZones-fill',opacity: 1},
+                {layer: 'GrazingZones-fill',opacity: 1},
+                {layer: 'InvestmentZone-fill',opacity: 1},
+                {layer: 'Settlement_Agr-fill',opacity: 1},
+                {layer: 'Settlement_Gra-fill',opacity: 1},
+                {layer: 'Social_Service-fill',opacity: 1},
+                {layer: 'Water_sources-fill',opacity: 1},
+                {layer: 'WetSeasonGrazi-fill',opacity: 1},
+                {layer: 'WildlifeMGMT-fill',opacity: 1}
+
+            ],
+            onChapterExit: [
+                {layer: 'Calves_Weak-fill',opacity: 0},
+                {layer: 'Dry_season_grz-fill',opacity: 0},
+                {layer: 'ForestZones-fill',opacity: 0},
+                {layer: 'GrazingZones-fill',opacity: 0},
+                {layer: 'InvestmentZone-fill',opacity: 0},
+                {layer: 'Settlement_Agr-fill',opacity: 0},
+                {layer: 'Settlement_Gra-fill',opacity: 0},
+                {layer: 'Social_Service-fill',opacity: 0},
+                {layer: 'Water_sources-fill',opacity: 0},
+                {layer: 'WetSeasonGrazi-fill',opacity: 0},
+                {layer: 'WildlifeMGMT-fill',opacity: 0}
+
+            ],
+            legend: `
+                <h3 style="margin-top:0;">Legend</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #e41a1c; margin-right: 8px; border-radius:3px;"></span>
+                    Areas for Calves and Weak Livestock
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #485A82; margin-right: 8px; border-radius:3px;"></span>
+                    Dry Season Grazing
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #927F5F; margin-right: 8px; border-radius:3px;"></span>
+                    Forest Zones
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #377eb8; margin-right: 8px; border-radius:3px;"></span>
+                    Grazing Zones
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #ff7f00; margin-right: 8px; border-radius:3px;"></span>
+                    Investment Zones
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #4daf4a; margin-right: 8px; border-radius:3px;"></span>
+                    Settlements and Agriculture
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #984ea3; margin-right: 8px; border-radius:3px;"></span>
+                    Settlements and Grazing
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #F5FCBD; margin-right: 8px; border-radius:3px;"></span>
+                    Social Services
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #9C4061; margin-right: 8px; border-radius:3px;"></span>
+                    Water Sources
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #F56959; margin-right: 8px; border-radius:3px;"></span>
+                    Wet Season Grazing
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #FCCCC5; margin-right: 8px; border-radius:3px;"></span>
+                    Wildlife Management
+                  </li>
+                </ul>
+            `
+        }
 
     ]
 };
