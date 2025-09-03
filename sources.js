@@ -252,7 +252,7 @@ var externalData = {
             "type": "fill",
             "source": "Calves_Weak",
             "paint": {
-                "fill-color": "#e41a1c",
+                "fill-color": "#377eb8",
                 "fill-opacity": 0.5
             }
         },
@@ -262,7 +262,7 @@ var externalData = {
             "type": "fill",
             "source": "Dry_season_grz",
             "paint": {
-                "fill-color": "#485A82",
+                "fill-color": "#377eb8",
                 "fill-opacity": 0.5
             }
         },
@@ -312,7 +312,7 @@ var externalData = {
             "type": "fill",
             "source": "Settlement_Gra",
             "paint": {
-                "fill-color": "#984ea3",
+                "fill-color": "#4daf4a",
                 "fill-opacity": 0.5
             }
         },
@@ -322,7 +322,7 @@ var externalData = {
             "type": "fill",
             "source": "Social_Service",
             "paint": {
-                "fill-color": "#F5FCBD",
+                "fill-color": "#4daf4a",
                 "fill-opacity": 0.5
             }
         },
@@ -342,7 +342,7 @@ var externalData = {
             "type": "fill",
             "source": "WetSeasonGrazi",
             "paint": {
-                "fill-color": "#F56959",
+                "fill-color": "#377eb8",
                 "fill-opacity": 0.5
             }
         },
@@ -352,7 +352,7 @@ var externalData = {
             "type": "fill",
             "source": "WildlifeMGMT",
             "paint": {
-                "fill-color": "#FCCCC5",
+                "fill-color": "#377eb8",
                 "fill-opacity": 0.5
             }
         },

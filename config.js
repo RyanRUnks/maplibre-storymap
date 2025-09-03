@@ -444,14 +444,7 @@ var config = {
             legend: `
                 <h3 style="margin-top:0;">Legend</h3>
                 <ul style="list-style: none; padding-left: 0;">
-                  <li>
-                    <span style="display: inline-block; width: 18px; height: 18px; background: #e41a1c; margin-right: 8px; border-radius:3px;"></span>
-                    Areas for Calves and Weak Livestock
-                  </li>
-                  <li>
-                    <span style="display: inline-block; width: 18px; height: 18px; background: #485A82; margin-right: 8px; border-radius:3px;"></span>
-                    Dry Season Grazing
-                  </li>
+
                   <li>
                     <span style="display: inline-block; width: 18px; height: 18px; background: #927F5F; margin-right: 8px; border-radius:3px;"></span>
                     Forest Zones
@@ -469,25 +462,10 @@ var config = {
                     Settlements and Agriculture
                   </li>
                   <li>
-                    <span style="display: inline-block; width: 18px; height: 18px; background: #984ea3; margin-right: 8px; border-radius:3px;"></span>
-                    Settlements and Grazing
-                  </li>
-                  <li>
-                    <span style="display: inline-block; width: 18px; height: 18px; background: #F5FCBD; margin-right: 8px; border-radius:3px;"></span>
-                    Social Services
-                  </li>
-                  <li>
                     <span style="display: inline-block; width: 18px; height: 18px; background: #9C4061; margin-right: 8px; border-radius:3px;"></span>
                     Water Sources
                   </li>
-                  <li>
-                    <span style="display: inline-block; width: 18px; height: 18px; background: #F56959; margin-right: 8px; border-radius:3px;"></span>
-                    Wet Season Grazing
-                  </li>
-                  <li>
-                    <span style="display: inline-block; width: 18px; height: 18px; background: #FCCCC5; margin-right: 8px; border-radius:3px;"></span>
-                    Wildlife Management
-                  </li>
+
                 </ul>
             `
         }
