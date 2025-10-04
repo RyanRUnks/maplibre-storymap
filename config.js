@@ -39,7 +39,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {layer: 'my-geojson-fill',opacity: 0},
-                {layer: 'my-geojson-label2',opacity: 0},
+                {layer: 'my-geojson-label2', paint: 'text-opacity', opacity: 0},
                 {layer: 'my-geojson-fill2',opacity: 0},
                 {layer: 'Datooga-fill',opacity: 0.5},
                 {layer: 'Datooga_Hadzabe-fill',opacity: 1},
@@ -67,7 +67,7 @@ var config = {
             ],
             onChapterExit: [
                  {layer: 'my-geojson-fill',opacity: 0},
-                 {layer: 'my-geojson-label2',opacity: 0},
+                 {layer: 'my-geojson-label2', paint: 'text-opacity', opacity: 0},
                  {layer: 'my-geojson-fill2',opacity: 0},
                  {layer: 'Datooga-fill',opacity: 0},
                  {layer: 'Datooga_Hadzabe-fill',opacity: 0},
@@ -152,7 +152,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                  {layer: 'my-geojson-fill',opacity: 0},
-                 {layer: 'my-geojson-label2',opacity: 1},
+                 {layer: 'my-geojson-label2', paint: 'text-opacity', opacity: 1},
                  {layer: 'my-geojson-fill2',opacity: 0.5},
                  {layer: 'Datooga-fill',opacity: 0},
                  {layer: 'Datooga_Hadzabe-fill',opacity: 0},
@@ -173,14 +173,14 @@ var config = {
                 {layer: 'WetSeasonGrazi-fill',opacity: 0},
                 {layer: 'WildlifeMGMT-fill',opacity: 0},
                 {layer: 'ForestReserveM-fill',opacity: 0},
-                {layer: 'Game_Reserve-fill',opacity: 0},
-                {layer: 'Ngorongoro-fill',opacity: 0},
+                {layer: 'Game_Reserve-fill',opacity: 1},
+                {layer: 'Ngorongoro-fill',opacity: 1},
                 {layer: 'National_parks-fill',opacity: 1},
                 {layer: 'WMA-fill',opacity: 1}
             ],
             onChapterExit: [
                  {layer: 'my-geojson-fill',opacity: 0},
-                 {layer: 'my-geojson-label2',opacity: 0},
+                 {layer: 'my-geojson-label2', paint: 'text-opacity', opacity: 0},
                  {layer: 'my-geojson-fill2',opacity: 0},
                  {layer: 'Datooga-fill',opacity: 0},
                  {layer: 'Datooga_Hadzabe-fill',opacity: 0},
@@ -205,7 +205,36 @@ var config = {
                 {layer: 'Ngorongoro-fill',opacity: 0},
                 {layer: 'National_parks-fill',opacity: 0},
                 {layer: 'WMA-fill',opacity: 0}
-            ]
+            ],
+                        legend: `
+                <h3 style="margin-top:0;">Legend</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #B42222; margin-right: 8px; border-radius:3px;"></span>
+                    CCROs
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #984ea3; margin-right: 8px; border-radius:3px;"></span>
+                    Forest Reserves
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #F5FCBD; margin-right: 8px; border-radius:3px;"></span>
+                    Game Reserves
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #9C4061; margin-right: 8px; border-radius:3px;"></span>
+                    Ngorongoro Conservation Area (Maasai Community Land)
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #F56959; margin-right: 8px; border-radius:3px;"></span>
+                    National Parks
+                  </li>
+                  <li>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #FCCCC5; margin-right: 8px; border-radius:3px;"></span>
+                    Wildlife Management Areas 
+                  </li>
+                </ul>
+            `
         },
         {
             id: 'chapter-3',
@@ -232,7 +261,7 @@ var config = {
             onChapterEnter: [
 
                {layer: 'my-geojson-fill',opacity: 1},
-                 {layer: 'my-geojson-label2',opacity: 0},
+                 {layer: 'my-geojson-label2', paint: 'text-opacity', opacity: 0},
                  {layer: 'my-geojson-fill2',opacity: 0},
                  {layer: 'Datooga-fill',opacity: 0},
                  {layer: 'Datooga_Hadzabe-fill',opacity: 0},
@@ -260,7 +289,7 @@ var config = {
             ],
             onChapterExit: [
                  {layer: 'my-geojson-fill',opacity: 0},
-                 {layer: 'my-geojson-label2',opacity: 0},
+                 {layer: 'my-geojson-label2', paint: 'text-opacity', opacity: 0},
                  {layer: 'my-geojson-fill2',opacity: 0},
                  {layer: 'Datooga-fill',opacity: 0},
                  {layer: 'Datooga_Hadzabe-fill',opacity: 0},
@@ -340,20 +369,45 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
+                {layer: 'my-geojson-fill',opacity: 1},
+                {layer: 'my-geojson-label2', paint: 'text-opacity', opacity: 0.5},
+                {layer: 'my-geojson-fill2',opacity: 0},
+                {layer: 'Datooga-fill',opacity: 0},
+                {layer: 'Datooga_Hadzabe-fill',opacity: 0},
+                {layer: 'Datooga_Maasai-fill',opacity: 0},
+                {layer: 'Hadzabe-fill',opacity: 0},
+                {layer: 'Maasai_Akie-fill',opacity: 0},
+                {layer: 'Maasai-fill',opacity: 0},
+                {layer: 'Sandawe_Maasai-fill',opacity: 0},
                 {layer: 'Calves_Weak-fill',opacity: 1},
                 {layer: 'Dry_season_grz-fill',opacity: 1},
                 {layer: 'ForestZones-fill',opacity: 1},
                 {layer: 'GrazingZones-fill',opacity: 1},
-                {layer: 'InvestmentZone-fill',opacity: 1},
+                {layer: 'InvestmentZone-fill',opacity: 0},
                 {layer: 'Settlement_Agr-fill',opacity: 1},
                 {layer: 'Settlement_Gra-fill',opacity: 1},
                 {layer: 'Social_Service-fill',opacity: 1},
-                {layer: 'Water_sources-fill',opacity: 1},
+                {layer: 'Water_sources-fill',opacity: 0},
                 {layer: 'WetSeasonGrazi-fill',opacity: 1},
-                {layer: 'WildlifeMGMT-fill',opacity: 1}
+                {layer: 'WildlifeMGMT-fill',opacity: 1},
+                {layer: 'ForestReserveM-fill',opacity: 0},
+                {layer: 'Game_Reserve-fill',opacity: 0},
+                {layer: 'Ngorongoro-fill',opacity: 0},
+                {layer: 'National_parks-fill',opacity: 0},
+                {layer: 'WMA-fill',opacity: 0}
 
             ],
             onChapterExit: [
+                {layer: 'my-geojson-fill',opacity: 0},
+                {layer: 'my-geojson-label2', paint: 'text-opacity', opacity: 0},
+                {layer: 'my-geojson-fill2',opacity: 0},
+                {layer: 'Datooga-fill',opacity: 0},
+                {layer: 'Datooga_Hadzabe-fill',opacity: 0},
+                {layer: 'Datooga_Maasai-fill',opacity: 0},
+                {layer: 'Hadzabe-fill',opacity: 0},
+                {layer: 'Maasai_Akie-fill',opacity: 0},
+                {layer: 'Maasai-fill',opacity: 0},
+                {layer: 'Sandawe_Maasai-fill',opacity: 0},
                 {layer: 'Calves_Weak-fill',opacity: 0},
                 {layer: 'Dry_season_grz-fill',opacity: 0},
                 {layer: 'ForestZones-fill',opacity: 0},
@@ -364,7 +418,12 @@ var config = {
                 {layer: 'Social_Service-fill',opacity: 0},
                 {layer: 'Water_sources-fill',opacity: 0},
                 {layer: 'WetSeasonGrazi-fill',opacity: 0},
-                {layer: 'WildlifeMGMT-fill',opacity: 0}
+                {layer: 'WildlifeMGMT-fill',opacity: 0},
+                {layer: 'ForestReserveM-fill',opacity: 0},
+                {layer: 'Game_Reserve-fill',opacity: 0},
+                {layer: 'Ngorongoro-fill',opacity: 0},
+                {layer: 'National_parks-fill',opacity: 0},
+                {layer: 'WMA-fill',opacity: 0}
 
             ],
             legend: `
