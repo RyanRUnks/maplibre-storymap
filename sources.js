@@ -118,9 +118,9 @@ var externalData = {
             "data": "./map/Game_Reserve_FeaturesToJSON.geojson"
         },
                 {
-            "name": "GCA_main", 
+            "name": "Ngorongoro", 
             "type": "geojson",
-            "data": "./map/GCA_main_FeaturesToJSON.geojson"
+            "data": "./map/Ngorongoro_FeaturesToJSO.geojson"
         },
                 {
             "name": "National_parks", 
@@ -383,9 +383,9 @@ var externalData = {
         },
 
         {
-            "id": "GCA_main-fill",
+            "id": "Ngorongoro-fill",
             "type": "fill",
-            "source": "GCA_main",
+            "source": "Ngorongoro",
             "paint": {
                 "fill-color": "#9C4061",
                 "fill-opacity": 0.5
