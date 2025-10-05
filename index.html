@@ -567,6 +567,49 @@
         var scroller = scrollama();
 
         map.on("load", function () {
+
+                const allLayerIds = [
+                        'my-geojson-fill',
+                        'my-geojson-label2',
+                        'my-geojson-fill2',
+                        'Datooga-fill',
+                        'Datooga_Hadzabe-fill',
+                        'Datooga_Maasai-fill',
+                        'Hadzabe-fill',
+                        'Maasai_Akie-fill',
+                        'Maasai-fill',
+                        'Sandawe_Maasai-fill',
+                        'Calves_Weak-fill',
+                        'Dry_season_grz-fill',
+                        'ForestZones-fill',
+                        'GrazingZones-fill',
+                        'InvestmentZone-fill',
+                        'Settlement_Agr-fill',
+                        'Settlement_Gra-fill',
+                        'Social_Service-fill',
+                        'Water_sources-fill',
+                        'WetSeasonGrazi-fill',
+                        'WildlifeMGMT-fill',
+                        'ForestReserveM-fill',
+                        'Game_Reserve-fill',
+                        'Ngorongoro-fill',
+                        'National_parks-fill',
+                        'WMA-fill'
+                        ];
+
+                        allLayerIds.forEach(id => {
+                        const layer = map.getLayer(id);
+                        if (!layer) return;
+                        if (layer.type === 'fill') {
+                            map.setPaintProperty(id, 'fill-opacity', 0);
+                        } else if (layer.type === 'line') {
+                            map.setPaintProperty(id, 'line-opacity', 0);
+                        } else if (layer.type === 'symbol') {
+                            map.setPaintProperty(id, 'text-opacity', 0);
+                        }
+                        });
+
+                        
             if (config.use3dTerrain) {
                 map.addSource('terrainSource', {
                     'type': 'raster-dem',

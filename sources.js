@@ -135,15 +135,6 @@ var externalData = {
 
     ],
     layers: [
-        {
-            "id": "my-geojson-fill",
-            "type": "fill",
-            "source": "my-geojson-source",
-            "paint": {
-                "fill-color": "#B42222",
-                "fill-opacity": 0.5
-            }
-        },
         
         {
             "id": "my-geojson-fill2",
@@ -151,26 +142,10 @@ var externalData = {
             "source": "my-geojson-source2",
             "paint": {
                 "fill-color": "#B42222",
-                "fill-opacity": 0.5
+                "fill-opacity": 0.5,
             }
         },
 
-
-        {
-            id: "my-geojson-label2",
-            type: "symbol",
-            source: "my-geojson-source2",
-            layout: {
-                "text-field": ["get", "NewDist20"],        // property to use as label
-                "text-size": 14,
-                "text-anchor": "center"
-            },
-            paint: {
-                "text-color": "#222",
-                "text-halo-color": "#fff",
-                "text-halo-width": 1
-            }
-        },
 
         {
             "id": "Datooga-fill",
@@ -227,8 +202,8 @@ var externalData = {
             "type": "fill",
             "source": "Maasai",
             "paint": {
-                "fill-color": "#4daf4a",
-                "fill-opacity": 0.5
+                "fill-color": "#ffbd59",
+                "fill-opacity": 0.75
             }
         },
 
@@ -252,7 +227,7 @@ var externalData = {
             "type": "fill",
             "source": "Calves_Weak",
             "paint": {
-                "fill-color": "#377eb8",
+                "fill-color": "#ffbd59",
                 "fill-opacity": 0.5
             }
         },
@@ -262,27 +237,19 @@ var externalData = {
             "type": "fill",
             "source": "Dry_season_grz",
             "paint": {
-                "fill-color": "#377eb8",
+                "fill-color": "#ffbd59",
                 "fill-opacity": 0.5
             }
         },
 
-        {
-            "id": "ForestZones-fill",
-            "type": "fill",
-            "source": "ForestZones",
-            "paint": {
-                "fill-color": "#927F5F",
-                "fill-opacity": 0.5
-            }
-        },
+
 
         {
             "id": "GrazingZones-fill",
             "type": "fill",
             "source": "GrazingZones",
             "paint": {
-                "fill-color": "#377eb8",
+                "fill-color": "#ffbd59",
                 "fill-opacity": 0.5
             }
         },
@@ -302,7 +269,7 @@ var externalData = {
             "type": "fill",
             "source": "Settlement_Agr",
             "paint": {
-                "fill-color": "#4daf4a",
+                "fill-color": "#858463",
                 "fill-opacity": 0.5
             }
         },
@@ -342,7 +309,7 @@ var externalData = {
             "type": "fill",
             "source": "WetSeasonGrazi",
             "paint": {
-                "fill-color": "#377eb8",
+                "fill-color": "#ffbd59",
                 "fill-opacity": 0.5
             }
         },
@@ -352,25 +319,11 @@ var externalData = {
             "type": "fill",
             "source": "WildlifeMGMT",
             "paint": {
-                "fill-color": "#377eb8",
+                "fill-color": "#ffbd59",
                 "fill-opacity": 0.5
             }
         },
 
-
-
-
-
-
-        {
-            "id": "ForestReserveM-fill",
-            "type": "fill",
-            "source": "ForestReserveM",
-            "paint": {
-                "fill-color": "#984ea3",
-                "fill-opacity": 0.5
-            }
-        },
 
                 {
             "id": "Game_Reserve-fill",
@@ -397,7 +350,7 @@ var externalData = {
             "type": "fill",
             "source": "National_parks",
             "paint": {
-                "fill-color": "#F56959",
+                "fill-color": "#55524c",
                 "fill-opacity": 0.5
             }
         },
@@ -411,6 +364,52 @@ var externalData = {
                 "fill-opacity": 0.5
             }
         },
+
+                {
+            "id": "my-geojson-fill",
+            "type": "fill",
+            "source": "my-geojson-source",
+            "paint": {
+                "fill-color": "#ffbd59",
+                "fill-opacity": 0.5
+            }
+        },
+
+                {
+            "id": "ForestZones-fill",
+            "type": "fill",
+            "source": "ForestZones",
+            "paint": {
+                "fill-color": "#4c3f0c",
+                "fill-opacity": 0.5
+            }
+        },
+
+                {
+            "id": "ForestReserveM-fill",
+            "type": "fill",
+            "source": "ForestReserveM",
+            "paint": {
+                "fill-color": "#4c3f0c",
+                "fill-opacity": 0.5
+            }
+        },
+
+                {
+            id: "my-geojson-label2",
+            type: "symbol",
+            source: "my-geojson-source2",
+            layout: {
+                "text-field": ["get", "NewDist20"],        // property to use as label
+                "text-size": 14,
+                "text-anchor": "center"
+            },
+            paint: {
+                "text-color": "#222",
+                "text-halo-color": "#fff",
+                "text-halo-width": 1
+            }
+        }
 
 
 
