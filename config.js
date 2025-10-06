@@ -222,7 +222,7 @@ var config = {
                     Ngorongoro Conservation Area (Maasai Community Land)
                   </li>
                   <li>
-                    <span style="display: inline-block; width: 18px; height: 18px; background: #55524c; margin-right: 8px; border-radius:3px;"></span>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #798b3e; margin-right: 8px; border-radius:3px;"></span>
                     National Parks
                   </li>
                   <li>
@@ -420,7 +420,7 @@ var config = {
 
                   <li>
                     <span style="display: inline-block; width: 18px; height: 18px; background: #ffbd59; margin-right: 8px; border-radius:3px;"></span>
-                    Grazing Zones
+                    Communal CCROs and grazing land
                   </li>
 
                   <li>
@@ -447,7 +447,7 @@ var config = {
 
                   
                   <li>
-                    <span style="display: inline-block; width: 18px; height: 18px; background: #55524c; margin-right: 8px; border-radius:3px;"></span>
+                    <span style="display: inline-block; width: 18px; height: 18px; background: #798b3e; margin-right: 8px; border-radius:3px;"></span>
                     National Parks
                   </li>
                   <li>

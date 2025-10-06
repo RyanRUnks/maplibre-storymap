@@ -350,20 +350,12 @@ var externalData = {
             "type": "fill",
             "source": "National_parks",
             "paint": {
-                "fill-color": "#55524c",
+                "fill-color": "#798b3e",
                 "fill-opacity": 0.5
             }
         },
 
-        {
-            "id": "WMA-fill",
-            "type": "fill",
-            "source": "WMA",
-            "paint": {
-                "fill-color": "#FCCCC5",
-                "fill-opacity": 0.5
-            }
-        },
+
 
                 {
             "id": "my-geojson-fill",
@@ -391,6 +383,16 @@ var externalData = {
             "source": "ForestReserveM",
             "paint": {
                 "fill-color": "#4c3f0c",
+                "fill-opacity": 0.5
+            }
+        },
+
+                {
+            "id": "WMA-fill",
+            "type": "fill",
+            "source": "WMA",
+            "paint": {
+                "fill-color": "#FCCCC5",
                 "fill-opacity": 0.5
             }
         },
